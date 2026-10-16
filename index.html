@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>IELTS Band 8 · 2 Aylık Hazırlık Uygulaması</title>
+<meta name="description" content="2 ay içinde IELTS Academic'te Band 8 hedefi için Reading, Listening, Writing soruları, örnek cevaplar, değerlendirme kriterleri ve haftalık çalışma programı." />
+
+<!-- iOS / PWA: ana ekrana eklendiğinde tam ekran uygulama gibi çalışır -->
+<meta name="theme-color" content="#1f6feb" />
+<meta name="color-scheme" content="light dark" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+<meta name="apple-mobile-web-app-title" content="IELTS 8" />
+<meta name="format-detection" content="telephone=no" />
+
+<link rel="manifest" href="manifest.webmanifest" />
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png" />
+<link rel="icon" type="image/png" sizes="512x512" href="icons/icon-512.png" />
+
+<!-- iOS açılış ekranları (splash) — cihaza göre uygun olan yüklenir -->
+<link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="splash/640x1136.png" />
+<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="splash/750x1334.png" />
+<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)" href="splash/828x1792.png" />
+<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" href="splash/1125x2436.png" />
+<link rel="apple-touch-startup-image" media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3)" href="splash/1170x2532.png" />
+<link rel="apple-touch-startup-image" media="(device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3)" href="splash/1179x2556.png" />
+<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)" href="splash/1242x2688.png" />
+<link rel="apple-touch-startup-image" media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3)" href="splash/1284x2778.png" />
+<link rel="apple-touch-startup-image" media="(device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3)" href="splash/1290x2796.png" />
+<link rel="stylesheet" href="assets/styles.css?v=3" />
+</head>
+<body data-theme="light">
+
+<header class="topbar">
+  <div class="brand">
+    <span class="brand-mark">8</span>
+    <div class="brand-text">
+      <strong>IELTS Band&nbsp;8 Trainer</strong>
+      <small>2 aylık akademik hazırlık programı</small>
+    </div>
+  </div>
+
+  <div class="topbar-tools">
+    <div class="countdown" id="countdown" title="Sınavına kalan gün">
+      <span class="cd-num" id="cdDays">--</span>
+      <span class="cd-lbl">gün kaldı</span>
+    </div>
+    <button class="icon-btn" id="themeToggle" title="Açık/koyu tema">◐</button>
+  </div>
+</header>
+
+<nav class="tabs" id="tabs" role="tablist" aria-label="Ana bölümler">
+  <button class="tab" data-route="dashboard" role="tab">Panel</button>
+  <button class="tab" data-route="plan" role="tab">8 Haftalık Plan</button>
+  <button class="tab" data-route="vocab" role="tab">Kelime (C2)</button>
+  <button class="tab" data-route="grammar" role="tab">Gramer (C2)</button>
+  <button class="tab" data-route="criteria" role="tab">Kriterler &amp; Band</button>
+  <button class="tab" data-route="guide" role="tab">Nasıl Kullanılır</button>
+</nav>
+
+<nav class="tabs tabs-exam" id="examTabs" role="tablist" aria-label="IELTS sınavları">
+  <span class="tabs-label">10 Tam IELTS Sınavı</span>
+  <!-- IELTS 1-10 butonları app.js tarafından üretilir -->
+</nav>
+
+<main id="view" class="view" aria-live="polite"><!-- JS renders here --></main>
+
+<footer class="footer">
+  <p>
+    <strong>Kaynak &amp; telif notu:</strong> Bu uygulamadaki sorular, metinler ve model cevaplar resmî IELTS formatı
+    (Cambridge English / British Council / IDP band tanımlayıcıları) temel alınarak <em>sınav düzeyinde özgün</em> olarak yazılmıştır.
+    Telifli Cambridge <em>IELTS 1–19</em> kitap metinleri birebir kopyalanmamıştır. Gerçek sınav pratiği için resmî
+    Cambridge Practice Tests kitaplarını ve <a href="https://ielts.org" target="_blank" rel="noopener">ielts.org</a>
+    ücretsiz örnek testlerini kullanın.
+  </p>
+  <p class="muted">İlerlemen bu tarayıcıda (localStorage) saklanır · Çevrimdışı çalışır · Web Speech API ile dinleme diktesi</p>
+</footer>
+
+<!-- Veri katmanı (klasik script'ler: dosyayı çift tıklayarak açınca da çalışır) -->
+<script src="js/data/criteria.js?v=3"></script>
+<script src="js/data/descriptors.js?v=3"></script>
+<script src="js/data/plan.js?v=3"></script>
+<script src="js/data/reading.js?v=3"></script>
+<script src="js/data/listening.js?v=3"></script>
+<script src="js/data/writing.js?v=3"></script>
+<script src="js/data/speaking.js?v=3"></script>
+<script src="js/data/vocab.js?v=3"></script>
+<script src="js/data/grammar.js?v=3"></script>
+<script src="js/data/placement.js?v=3"></script>
+<script src="js/store.js?v=3"></script>
+<script src="js/app.js?v=3"></script>
+<script src="js/native.js?v=3"></script>
+
+<!-- Service Worker kaydı: çevrimdışı çalışma (yalnızca HTTPS veya localhost üzerinde etkin) -->
+<script>
+  if ("serviceWorker" in navigator &&
+      (location.protocol === "https:" || location.protocol === "http:")) {
+    window.addEventListener("load", function () {
+      navigator.serviceWorker.register("sw.js").catch(function () {});
+    });
+    /* Yeni sürüm devreye girdiğinde sayfayı BİR KEZ yenile (güncelleme takılmasın). */
+    var hadController = !!navigator.serviceWorker.controller;
+    var reloaded = false;
+    navigator.serviceWorker.addEventListener("controllerchange", function () {
+      if (!hadController || reloaded) return;
+      reloaded = true;
+      try { window.location.reload(); } catch (e) {}
+    });
+  }
+</script>
+</body>
+</html>
