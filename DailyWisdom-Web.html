@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Daily Wisdom</title>
+<meta name="description" content="Her gün tek bir ilham verici söz. Tamamen offline, takipsiz.">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#000000">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Daily Wisdom">
+<meta name="format-detection" content="telephone=no">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAgHklEQVR42u1de5QcVZm/371V1a/pmcmDAElMiCFCEgEJBFgiD8Py8CBROAoqusJR4aCrG4FdXPFw5KzLQ9fV9eAuumfXXd096q66sgcw6hID8cFbHoGQhJCEEMIkk0xmpp/1uN/+0fPo7umquq+q6Uj6zCHDVHd1d91f/b7f97xAQh4AY/+S8Ad0+K3znyDqYNjJgQi9t/pD5BxIDD0w4ggqvDzmDyj+FTDsE4SsKnQrLCApEBhd7umCCIa9BAXOiygCjjjOEEQGyK+SKVgkhAaTWNFBCSZBIR34A2RpQ5wWwAhhdD0mtFCCSeAjCi1S+ABDnAHKdiSULSAJNEDXEIQJlChBRBwfoMIZ4QZDypQow0KLTcA4NtAMSkzgI4YmJPHRBok4ZIAam6QJC0jb0qAcDNRQYoxCBPFBCGIDGOlaEzVtIXEcukRuYKoQMY4PJACCXqshkQGSPC90sEuEqBJQZHlGlUJU8BEDjlgIaBFGF8ACUgiCoR5EjFGIND4AoOuQEQ+L6fBSDCAGo15tkkLQjH0JBQfExSsgVVjIYQIOj/AGarJI0vzRGRymOEMcGUZgAYdlBEwGIlImRps/OoBDToGKc4Y0YYjCojv1qGQABFOgEFn+aAeHHGdoI0MHFl2LCVU9oUUhIvwhi48WcBjhDA1YCPkgWpiA6dKiuigxCBFxfEyCwwhnCIoMUGILMAMIo/FzTA8iWvhQ4g9oD3RoKFBdzjBVxQFp2h9UBkqcpFDkDyP6dBIcRrxWEWQkCwuIf1HyVgVlgYLJUIi+fUFCLLn7MEVkmIKFWd6AmEWCsSMgChGIeNbYsfandH4J6OihDi8GQoACGNYZkAos1AtIUnZJUJJz9KyMUf4ACjANyNCxI90HC6FIlSZEOpkYdfsiEuZAQnXMM6gUT0QJAmFkQBtGoJvCHp0+D+gGb3RLKEVe2f6RgVKIuSuNcQaof0m5CBzp+iBYfEl4HCugWf7o+KulRhvynAGK6ykB1+RDYaj1htgmACMlZKjqnPIx1JVo0ys7/trMHKK3pwpnKBCGKbaA7ulHiIwqqFBInATR448JcCSJDAVrAtpsYTrYiuZQImtlUMyF0bcvbc9tgKObOAPiKpol1xxSZg1MikUwFf5oJg+LmLPcgrUbCgWrpjFhRnR0DoiBBEpARoh0DlQh0Qu0RekQoJQKSj6Iq/AGzbJRBc7QryVKuokFTfKHun1RIo8xcMgZFFWdAYnBIl17otS+ItvgqGdfYk2eiDilhGhPQ0gZGa0BppBwU/pBkPb3ham3HMh8LZChQfm+PpE1BdocBTPCGeJ3sQIskupyTLdxBQ1QiKI+lSEPy2gwSV6BGkBGWiM7UCv0BW2iFQUjZkAAw/K/KvoUBE498Vw2IUh1aSMZzgDtRlhIrA5MadaCEoVo8Qeqig8qapZA5Zqb4QwRpRGpAcCcEmk5lcRJJYJJnbkyMf0RIT4oMRVZkFOgYpwBHU0KCC5E0tK0HSVENaesV2kVfYWJavJs3KwkYFAMIEO2eR66qcke5Z+IRu2LvnHB0KyslkFJABkmYUEpAIGAc+Ot1GNpKgoAwAOOGC8LobNkDReaQIT06ZQSQ+nkLRBgjEolUBQ5Q1CByhKGZCFAI+JXrriE8Fw2YzwVSwEASLnqIfJMxqYUkBujEFX+UPdsaYpSXwEZMQZfzNYDIQBAGWXliluu1M8/Y9Hnr3sXAKB6HQRMHafGGK3WvVKlfvIJx9z26Qtm9OZ8n1MarUiUyqjFo5Iy4mPqSS3ZBIp0xY9xzpBvoWWM1mqeHwRnnbLg+g+ecd7K42b15/cMjHz/vqd6Crkg4JpwZwxcL3CrtWWLj77uqpWXnPO2+cf0IZK/+ceHMk6WBxwIwdB69LEDk8chqrY9OkgREvyINC7hJ203KyAabAIZdzZlZECzvEAklWrtuPmz/uLPzn7fBUsdmw2XajZjo5X6mhu+P3Cg5NgWhnNINLsAAAVSqtRmz+i54UNnXn3ZKX3F7HCpzgOecawr1/7g6Rf3FHJOwDG8hjxEQ2roU1PGhbVGz017KDIKFMRK3cUTFIzRWt0PguDaK07/xhcuPfOU+eWqW3N9Rqkf8Fn9hZ68s+6RrRnHikAAQMtP84NR6gW8WnPXrF52z21rLj5niesFlarXuKTZjL1wbv//rt/ccgXEfWsw59+CoiIQBQfEGZTo8ZOxJefx1QAx/QztH4ExWipXF8zt/+atl1131UqCWKq4jFIKgEg4IgA58x1vefTZ3dtfPeBE4qMjViyLlsr13p7MHTdedMsnz81l7ZFyHWCsso5zDDie9vZ5O1479PQLr2UzdoOcIuMiUw7G596kYo/hsZUQ5WElFbQmYsggYsiQ6ZhsdHiWytWLzznhzhsvOnpWz4FDFUbBYpQQEgTctlh/b37rzsF//db6l17Zn3Es5HLSlDE6Wqqetnz+393y7qWL5xwcrgCMnZ9zpBRm9uVe3zd669d/9fDjr2QzNuecxHeyqbmcYuJDqQp5UnOI0Ya01NBHhlQDFAVAxErN/cxHz/6rj5/j+kGt7jeWDZFwzvuK2UOjtX/58ZP/9tOnDw6XMxmHURmXAQgAlMq191980h03XpxxWKniWuPX0A94sZDxvOAHDzx37w8fe+2NQ5ZlORZD0TIduQINTfERqzzGwKFsUIiaQdFFBoRFtwLOfT/48tqLrr18xdBIFQlp9HsGHG1GewrOuke23fnPG7bu2J/NOI7NfBlXpTGQoFypffajq2755LmVqucFnI3bEaCkv5h77NndX753wxPPvWpbdjZjBXwiFCaYY5fTpy3VW/HbbrQI7OhyJCSoCw51qaFlTaAT1YPvc0LwG194z+UXLh8cKjM61gjsB7yYz5Sq9bu+88j37/sDpVDIOU3LJogMIATLFfeLn1r9mavPOjhShbE/kiDg2YxNKbnnPx+95z9+X3ODYj4TcJziBKFx8mjBh2nyAMaoSWQIGxSDnAFAKEDAOed4z21r1qw+cfBgxbImqX5Gb+6FbQOfu+vBTVv39hSyjRtdOuxFoVSuf+nPL7jhw2cdGCrTJuT1FjJvDJb+8qs/3/DY9nwuwyiM+a6olgaR44+4DIkk5JqwplXsoxySk61UDteeY//lBF0v+Idb37Nm9dLBg+VmZMzqy6/7zba1d9w/PFrrLeZ8n0tVyzWuN6V0tFy95ZPnN5DBWAvynn1p7w1fum/nnoO9PbmA82AceQAd8SElFuOVZHTmRVmZAgErAYMi7mNpccZE1AEAyuXa7Z+96MpLTto/NImMIOCz+vL/te75m+5+kAL0FDK+z2UbOQHBYnS4VPnEB8743MdWHThUoa3I+O3Tu6677X9GSvXentxUBdP4kIgC+IgKoSJEBk/HTyfm/8TGTEVzKwnU3wHRbTJvjkcxRkvl2ic+cMb1V60cHCo3Ow4z+nL//YtNa+94wGbMsS0eIEzE0YRrPZhFh0vVi8854bZPrT5Uqk7Y4CDg/cXso8/u/vitPylV3HzOidC2AMI3iu6QI9AtWWi+wy3GzNGGuHsCytspNF9oxuhoqXbO6Yu+95X3u66PY6PcSRDwvmL2kSd2XvPXP2aUMka5UpKNUqjWvEXzZ/zkmx8u5BzXCyZiXLmcvXP30JVrfzA0Us1mbcEEDSJRlago7NmKeS4YP1fKOHOoAxZEncnJkIbr+sfMLt5988UECecTHI7ZjL177/BNdz2ISJiliIwGCGyL3X3zJTP78nXXbyADcSyTt/bOB/YPlXNZRz91J5eJMF08HWbtqZkZLZqfWi2jDaTu+bfe8K5F82dWat5EHgCR2Bb90j3rX98/ksvaso5JMy2VK7VPX33WqhULhkdrEyKUc14sZL7+7797ZvOe3mI24LwRUieS4FabTwQpdnFRs9X+EO+hgDC6QnVGI6pRKtcuPe/EKy5cNjRcmZAaAed9xez9G15at3FLbzHnq97TlEKl4r5j6bzrr1p5aKTGrAlkYCHvPLnpte/97OlCPjvm+4ylfoQgIoqP2L3Sosf8gtx7dEQoNVTar6GjlBrxfZ/3FnM3XvtOzw+ah2UySstV994fPWFZDFF9vF7jpTdd+8581g4CDq2M8u0fPVGtee1FdOMQMYKPJKgAVJhDM80mUMEV+hSQ5gxCCGW0WnOvevfJy4+fU65OGpSA85688+vHXnluy15BgwKdfhil5Ur9gj9ZfP6Zbx0p1ScNCmI+Zz/30hvrH91eyGc6Sw0xCpn6pTqn4sEkeRAp8pAVpNJqA3SRPPUmAyCeF/T35j+y5pRqzWOtJQdIyH0PbUZEiCsTiPBkEdG26LVXrGivkeGYcawHHt5Sqdan1t4qUIgpsZqQi0AVmthkhTTINbtAJP0SSmmt7l549vFLFs6u1rwJm4JIHIe99sbwk5v2ZDM2Ry4FiBa1UXVPWz7vzFPeUq64zfUujNHh0dojT+ywLIEsvwA+pvAHdOAP+RoqZeUxhTkgMSMGMY4IKKoBZIxdtvpEjth8aTli1rGe3zqw72DZthiisH5p/QEKAeeXnn9CNmM1G6bG+V/ZfXDHa0NZxxISNCb4I+VJAYJmBcRZztCOORCn2ggA1Or+wrkzTl06t9rkvjZQwyh9YdsAIG9UfE38QEzt2CQ0gIDv8/6+/KoVC2t1v/n8yNG22ZYdg5Waa1mUArCJ80OiMUsD1lntYSW13QBohbzCLjel4Pv+qUuPndmfHx6tsuaxRAB+wF94eR9HrNRcznGsJYECo8AYBQAkyDlG0RmFWsVbvuToBXP7627QtuwU4MXt+zjntbrvBxzGB7lSBoxSoICI7SoYxhI0Ef3sU/Ivok1MEWmRyWzLlHeOTrVEtSaYdY5AlTaiHyedcAwDaPs6lEKt7uVz9pLj5uSzFueISDw/KFe90XK9VKkHAWcWK2QdAqEpewAIAr5s8Zx81h6qV5tVJwB4QUApLF4wu1jIBAFHJH7AKzV3tOSOlut+4AOwfM6eSNm31vLFzDuISbVGN7qBkT1OxcEhHBUFA7QBIrTR4HZK2Vvnz/ADPvV5Acev3HxJoyqncS96Pq/V/eHR6u43hp/dMrDxiZ3PvLSXcywWnIhan8VvmREiVL3PfWzVjde8c+L8fsDrrj9Sqr++b2TT1oGNT+164vnXyhWv2JNFJNgqfGL5I0bGSGbfJcgj5BDrPDBOM9MGsrENIXA0zmpZ7JrLV8yemfcDHmPtCbEYzWXtWf35JQtnn3vace+9YOkZJ88bOFDaunPQcaypr6ZAXD/44KUnL1k4q+4FNO78jNGsY8/oyy2aP/Psdyx47+ql565cVK55m7YNMAqMUlTXp5IdCAkoD1VwQHycF0SboUis+zrhWSGi47CPrDm1r5gNBMCBjS6BgNfcoFrzEMmShbOvuHB5LmdvfGoXG5951eysBAFe+e6TFs6d4XqB+PldN6jWPD/gC47tW7N66cK5/Q8/vsPzg6hwiLDSShwVIctIRd5Dzk+R3hhACBmNuw6BAAVKZcr7gABMaFIyUq6Xq+6N16z627V/Wqt7bR8HG0WHVFQfTJyfUmCMUgrlqjc0Uv3QpSffe/v7LItyji1fSpM8JF0GUJr5CZGurCEsJkB2QEgQYBCgBlUCUBgYLH3s8hWfeP/pI6Vaq+okHEmHgjEikbGzGB0YLF149vFfuP78StVtpx8wTx4JPaiqY63UYgd6tNHwV/2gWvcaTbDKCGvEOj999VmLF8yq1T2gkxVinPNKzZviDMk9bJsNDpWvvuyUVSsWtoVZJSMfMjFO3dADdAaHvE2ZphAegOsFw6N1SvX2lwXiesFRMwuXX7isVp8MpgEBjjg0UqU01nmIj+TaFvvgpSd38IoijQtAt+ypS5MIwIL2CKCwK0mB+H4wMFhilKLe4lEA1w1Wnbogl3Um2xWBEMS9+0f1w5qU0mrdO/3t8+bM7PF8DpBA5FSgCEjNvkP6ZYKgb2sBCMEdew5SbeMMAK7nL5zXP2dWj+s1HB8gSADozj2HfM417T8A8Tw+Z1bhuHn9rutrKA8hy5IElVCSLKBNl5YiEqCbt+9vq/FRW7yAY7GQmT2jEARjpcmIxLHZy7sOjpbqFtW9EI1c3bFHFTnnME0FOwkIUjU1GpGGjbQpIJxY4kgyjrV5+/59B8u2zVBzZ3lEi9F81kZEGDMpmHGsV/ce2rlnKONYXPMNCAJAIeeEVKakdCMKjrWcuqo0MTAmsq8nIjo2e33f8B9efD2X0V884Bx9P4D28Qr13/1ht8Johg4tUYiuF+jsD2fu4oFh5pheC9Px1gIAzvGBDVsACNGrEmUMylV3/8GyxejEmRDRsem6jVvLVZdSqqd5iesFe/ePUqBhUbUw8ojxWRJyaBPueEv8EQS8kHMeenT7iy/vz+cc5c4DRMzYbPvug3v2jTrOZDUy55jPOc9s3rvxqV3FgnpPCiKxbfbGYGnbrsFMJqQ4qIsrgWAKOFKbEgwCabbQN7EsNlKqfftHj2ccptOw5DjWgw9vrdY82hjj3Prz7R8+PtHipgjirLP+0e37DpQcmyWRUk/a0rCW/VaE8m3i/SkRJCkGDgi/6R37+a0DJy4+6pQTjilVPCa5hAHHnpyzbdfg7d9az6x2vxiRZDP2tlcP9Bez561cNFquM0n7goi2zUbL9c9/7ZflqtuenlXJw0HXhM91QQgpgN2y6Be/8autuw709WQ8n0txhsUACbn9W78+NFqzmwRH03N4sZD52nd/u+HxHbNnFDw/kEIG59hbyNz1nUde3jWYzdhR9NbFdabmmCMyNgrEGHPAZP6CHhqt/ebpV9915luPPapYqXoESGzwww+4Y7Nc1vn83//i/g1b+orZIES1MAq+zx969JUVy449cdFR5Yo7Pt8nhpMAYFZ//mvf/e0//fDx3mJ2IvyaMARkBr6KHT+MwYGEZDL2G4OlX/xm25KFs5YvmQOEuB5v8j9hojxzvHqU9BWzlZp/81fX/Xjdpv6+bHOCt60vAJFYFq3U3Psf3jp7Rn7FsrkWY64X8E7nJwQbpWXFvMMYfPneDd/83u+LhYxmjN+UJ6m2eTNrtabpgEMiExv9PRFJ1mHDpdrP/m/z6/tGF87tnzunWMg5jX1CGhVvQAhjkHGsnoJDAdY/9sraOx/Y+OTO/r5cAxltu/Y016UjEttivs8feHjLSzsG587pnX9MX0/BaZSGkPHcHGPg2Kwnn3Ec9vQLr990989/+ssXeotZkhgyIJ2YmW0xidHnaYFDBBkT/1AAJDhaqvcVs2efuuCc049bfvyco2f3FHKOYzNErNb8gQOlZzbvffCRrb9/ZjelJJ+b9FHD47pja9sYbDpSqmcda+VJ889bedxJbzt63tG9PfmMYzMAUqv7g0PlTdsG1m18+eHHX6l7QU+huVkSQ/YDbz6OAvM8pvyPxMyN0LlyEec4rMEBbeWivs/LVRcRczm7v5gtFjIZxyJIShX3wKHKSKluWbQnP1l9LuCYY1O1LXCO5YrnB0E2Y/cVs309GcexALBS9Q4cqhwaqQFAT96h7dXnSKI3E8aobTLC8HEEHBLgaNgCSoFQ4AH3Ax5wRGz8kdoWZYxOKA+Z/RdaVocCNEK0QcD9sWmV2Kj+shglSCZn4IfsAGqKPFIAh+lpgmSaN3INODYup2VRa7wXFQlBxCDgQq1jGOMGN57BGDBmTS4fYsCxOyNdxHzfyuEOlHGuBtmZl9EQGe/rQGx6kz/SByVHHkceb0pwxG59g52fi0eAcYQ5FHaDfDPhxjoCBmMLj0eY449o+ePkJBIzMU51P/YIOKbzVo3GB2q81qDPNV3URHEaaBJj917E2N1DUPBQ/EDp8TVu/0HVK3KYmxd8c2uOKbN98HBbczxiVgxdPHUOEOCbjlPpOwuOhAGCRJpW0wUHponz1JwLlFiX6b3d0ehxmtDNmqrDEf+uqI5aTHitu9VVmQoOFBDoaIKVibImFT03CuNj4if6j01HhClSa92n11WZRs2BaZwXpfalDwWEDHkdZi4M6oCj278SSqs2VP1S2FGEiqlA8zYFE18s7HJvRejSYSxfCO/kGr8WmBo/RrBc7P6hJs0KGmUkDNvfWD4UpuxACOADRWwIthBGFGdEqw2MjasnaZRQQlASvcQbEgIhE6IxmbLo2Hfr9ATsMCcwbP9dSD5Cf7jYbIwGBxLsohYsmU8Th4dQ7GoZC9RhhO5O/dJ0FYSKiRVyVzG84lbFHxHyZVAAGaikp2KcWBkVpZM7o0kAW1i+oTaopKLKJsPnZj5sesSCCqehKvhS1O4xL4jU5ygU6wrnD4wOf6HcUUHOMEEb2o6WRP0BijEHJmX7MCXFJ59ri8ZK/JJLcAbq5HWIRK9KEpoD9SlJjVzUyKN9zTBqy281yRGPGWHOkKFP1KQNVLopcSo41GINmCJ5yIcTUTdQLvQ0lApBGVUlyYZJLLOxB/0Xtu7qp3HusSbomPfDBIsMTUZFky+WRHFvRQ/f0ZYFEySPEC/PuAuBY18DhTkGZXWopE1BCbcBzcY5TPosejeQCj5MQgSVCQPNp8bMcwuGgQMNfj498hDCh5RP0QIRDUna6QSanKFDG3E99VrS0UpEWHRHWB2nToOYHNiEAqNy4nWmoMuviwx1bwB1cEN1Q43in5LolwWrOC9iBWAdWhNiwx6YmjWZpg5NRoGGzwHT2yOSKGwTKbGNqMKkRkjT1KMQMgT7amTjeaKvxKij1AToUSyoIvgtMbn6XKN5NwOcgagefkRjpIJxW4eGTnsySx4q28yK8ocGM0ACCQIzyECTt6Jc7QF2Yg7p8lk0kB1WqhxvuUd1Svw7KQ4tsSyPDKWa+iRpQyzOgRIfWiAcIli+jwrRQySIOH1Jc+G3R5G0MSpc65jSa4m7F5vBgfqMijp+jyl8iERBEqmiEG+zQWOtOEoxSwkvkyroKvPt56bLLLFTUXCisNBAhlwOHElKrQnte9lryVITyjTktaCzbTMksTs2qgQwUOt+Rol7ULK5N+woFVUa+kqoPSMR27huqjAfsW0Gh2ZeRYYqDHGGSE2z+XgNAwogtEswCG8jDHHsEncvgxB/KO/8LuA7m+x8FZwAEc0ZwgYFZeuRIxBqRSRTov4v0Y4UsU4UU2XwQCC5/gJEM3VTYoWAaFxzQPTMc9HtuCTJI0Z/JM8f6YxQNskZSlE3ZdpAgjTBvEIidQjY0cVFfBMgAw+3EQwY+aWEdasBidUlEAn/GHrDp1AlOi0XJ8MQsyJhWQT1nMyOYxBpXCKdUOkde1NnCwXfVJQzMNLN0wFjw0RRtb6LZErTUb6GF7uBRSLfTrHjThgZiiuCAg4Pa97/T5g8xJRpbFhMUp8qUEhyXIKoMT0vDkkyyDChQ0N8NIuY6WCPcTSjjgq6qEgaLicQ0ZrAjmupiRJE/a0adJFhfnojRrqy8uQhFhNTFB9R8THp3VEJUSYVRNObeJjog9Q0KNJxDkV8iEUahfAhqE9Fn5HyFt+oF79SsiaiuWwiM9wWTbmywpXNir2+kRUNQr0j+tkU3fMbRIZGiaVirIQ1p1ZUlKlgwraVOwzoU8ktHs3RiWQcECWfZZAzZDyUjve6NDjUxYe6fTFlZRTgoiE6UP6Jwm0wCTS6YQhzyBMCqGY6RflDASIGUGKCUlAJP0LyEyVKxGQmcIZ5wzTt+UXyAzMlKkla50JieiWC4t24aoRBNKvlULWpSaznSN64GLAvavwRX9g2LfsAoMJrFaefo3buE9vAkaZxkcJHdNOchq4AYqpaN1FYSFbIxQZDhccHMwAA8bKKWHCo8oc4hWhBRPlFaJRfZJtWDHKGTDSiFRzy+DDBHyoUYhIlae/dIKnKVDkjljYwLvxCpQ2bUmpYMNMkpOdiapRxumEROfLNBDKICWSILC6bIA6QqtlT4g9jJkZUo05b+FzBLgjCAsV8aNTL5GIbOOTwIbQUIMf7siZGzrRACvkUNekqvhOyejJOafITgzCvwYj4kNUFQiymAxFlrMgn4qW7AJWGrIlYE5Xe5BbmMGNcDPCHDkTSMjBG2jdRJuhoRIGKG5TGr+HgMCg+FBZMEx+icXZzziwmOKYXDXGG7AdjrZ4siOAjDX1qCiKpSg4Dexd3CWeEgsMIfwjG18UztGYgkojkSBcWBpFBYntl2xdaFB/pmRjpz0W6eG9O0eiFeAucOjIwJrVJE92U0mQjfafU57THvGTq2OTK18IJwzAyIv7KoEOxT6LkoWFi4iwMdOk2vsoz3BLbSFbE+cZmzQHql18+PhYqUZXCGzCNwVHVVkXFDIPM4gqWHIan7EloVtYkfyRFIQJSFaah5NwQLIj6HkzyyOhwYCwpG3IHavBH+hCRNDKmM/Yq8U0FWCTDGZ3jtKwFHOH4AAU7IbHe8SXkekFSSIM70GxITThDYhAZYYk3OXyA1kQlqXFPuisMicVIjTlx8cjQDdijCr5BLCurwR/SJsM0i0xnJZjCfpuosbJ6nDHF0WahhWAa/KFnYiQalbo/CKYJC/G/onSaP94mtlcJiuDDrIn5Y4WITEW6ZAGGeGhclTM6M4dB+yKbrY9BzmGCEvmpaep2RLVFSFRHAwBIxg6kw5MmIDINTbGJCJK4CnTJCKkeZ8R53wwA5GNLcvxhDh8qEJm2nZpMwUIjzKW54wEDEJmqkjY+SDc3xZrujFMo9UGivRW4QNAOYqd2GbQvajU/ogehOzGBxFx1Gcp1yalVMTeVCTbNPTKHj7Qh0h10IlyzpzbrC9XbXxVsCxJsn4iggA8VExMVDTUQ/lJpuk6iW8UULMS1ZzwQBAvQkCAhTHwqpGDuU0uFJOK1QpIVxkYGfqvCQgkZ4lp3ilpIAh/JsIgJaoBEI+c6wEEivUWgCE5igdY8QJHJTpWN1J6gmj83AJHDLAimwxYJEcbUXtnwuZxSbSVmCm9MFIdND1DQ3LP1kKFcZ9JhB0P9qdTmIWIWJUnAJQlLg/rbBIf/AZX29f5/gVRGj/OMtBwAAAAASUVORK5CYII=">
+<link rel="manifest" href="manifest.webmanifest">
+<style>
+  :root {
+    --bg: #000000;
+    --text: #ffffff;
+    --dim: rgba(255, 255, 255, 0.62);
+    --faint: rgba(255, 255, 255, 0.34);
+    --line: rgba(255, 255, 255, 0.10);
+    --surface: rgba(255, 255, 255, 0.06);
+    --accent: #d9b873;
+    --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
+    --sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+  }
+
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--sans);
+    -webkit-font-smoothing: antialiased;
+    overscroll-behavior: none;
+  }
+
+  body {
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  }
+
+  .glow {
+    position: fixed;
+    inset: 0;
+    background: radial-gradient(58% 42% at 50% 0%, rgba(217, 184, 115, 0.14), transparent 72%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .app {
+    position: relative;
+    z-index: 1;
+    max-width: 620px;
+    margin: 0 auto;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 26px 26px 22px;
+  }
+
+  /* --- üst bar ------------------------------------------------------- */
+  .topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    min-height: 34px;
+  }
+
+  .brand {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2.6px;
+    text-transform: uppercase;
+    color: var(--faint);
+  }
+
+  .icon-btn {
+    appearance: none;
+    border: 0;
+    background: transparent;
+    color: var(--text);
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .icon-btn:active { background: var(--surface); }
+
+  .icon-btn svg { width: 21px; height: 21px; display: block; }
+
+  .badge-count {
+    position: absolute;
+    top: 4px;
+    right: 2px;
+    min-width: 17px;
+    height: 17px;
+    padding: 0 4px;
+    border-radius: 9px;
+    background: var(--accent);
+    color: #17130b;
+    font-size: 10.5px;
+    font-weight: 700;
+    line-height: 17px;
+    text-align: center;
+  }
+
+  /* --- tarih --------------------------------------------------------- */
+  .date {
+    margin: 22px 0 0;
+    font-size: 13.5px;
+    color: var(--dim);
+  }
+
+  /* --- söz ----------------------------------------------------------- */
+  main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 26px 0;
+  }
+
+  .mark {
+    font-family: var(--serif);
+    font-size: 58px;
+    line-height: 0.5;
+    color: var(--accent);
+    opacity: 0.85;
+    margin-bottom: 20px;
+  }
+
+  blockquote {
+    margin: 0;
+    padding: 0;
+    font-family: var(--serif);
+    font-weight: 300;
+    font-size: clamp(23px, 7.2vw, 32px);
+    line-height: 1.42;
+    letter-spacing: 0.1px;
+    text-wrap: pretty;
+  }
+
+  .author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 22px;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--dim);
+  }
+
+  .author::before {
+    content: "";
+    width: 22px;
+    height: 1px;
+    background: var(--accent);
+    opacity: 0.75;
+    flex: none;
+  }
+
+  .enter { animation: enter 620ms cubic-bezier(0.22, 0.61, 0.36, 1) both; }
+
+  @keyframes enter {
+    from { opacity: 0; transform: translateY(10px) scale(0.985); }
+    to   { opacity: 1; transform: none; }
+  }
+
+  /* --- eylemler ------------------------------------------------------ */
+  .actions { display: flex; gap: 10px; }
+
+  .pill {
+    appearance: none;
+    flex: 1;
+    min-height: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    border-radius: 25px;
+    border: 1px solid var(--line);
+    background: var(--surface);
+    color: var(--text);
+    font-family: var(--sans);
+    font-size: 14.5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 160ms ease, background 200ms ease, color 200ms ease;
+  }
+
+  .pill:active { transform: scale(0.98); }
+
+  .pill svg { width: 17px; height: 17px; }
+
+  .pill.on {
+    color: var(--accent);
+    border-color: rgba(217, 184, 115, 0.45);
+    background: rgba(217, 184, 115, 0.10);
+  }
+
+  .meta {
+    margin-top: 16px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 11.5px;
+    color: var(--faint);
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* --- favoriler ----------------------------------------------------- */
+  .sheet {
+    position: fixed;
+    inset: 0;
+    z-index: 20;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(100%);
+    transition: transform 320ms cubic-bezier(0.22, 0.61, 0.36, 1);
+    padding: env(safe-area-inset-top) 0 env(safe-area-inset-bottom);
+    visibility: hidden;
+  }
+
+  .sheet.open { transform: none; visibility: visible; }
+
+  .sheet-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 20px;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .sheet-head h2 {
+    margin: 0;
+    font-family: var(--serif);
+    font-size: 19px;
+    font-weight: 400;
+  }
+
+  .sheet-body { overflow-y: auto; -webkit-overflow-scrolling: touch; padding: 8px 20px 30px; }
+
+  .empty { padding: 48px 12px; text-align: center; color: var(--faint); font-size: 14px; line-height: 1.6; }
+
+  .row {
+    padding: 18px 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .row:last-child { border-bottom: 0; }
+
+  .row p {
+    margin: 0 0 10px;
+    font-family: var(--serif);
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.45;
+  }
+
+  .row-foot { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+
+  .row-author { font-size: 13px; color: var(--dim); }
+
+  .row-actions { display: flex; gap: 4px; }
+
+  .row-actions button {
+    appearance: none;
+    border: 0;
+    background: transparent;
+    color: var(--accent);
+    width: 36px;
+    height: 36px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .row-actions button:active { background: var(--surface); }
+  .row-actions svg { width: 17px; height: 17px; }
+
+  /* --- bildirim (toast) ---------------------------------------------- */
+  .toast {
+    position: fixed;
+    left: 50%;
+    bottom: calc(28px + env(safe-area-inset-bottom));
+    transform: translate(-50%, 20px);
+    background: rgba(28, 28, 30, 0.94);
+    color: #fff;
+    border: 1px solid var(--line);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    padding: 11px 18px;
+    border-radius: 999px;
+    font-size: 13.5px;
+    font-weight: 500;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 220ms ease, transform 220ms ease;
+    z-index: 30;
+    white-space: nowrap;
+  }
+
+  .toast.show { opacity: 1; transform: translate(-50%, 0); }
+
+  /* --- ana ekrana ekleme ipucu --------------------------------------- */
+  .hint {
+    margin: 0 0 16px;
+    border: 1px solid var(--line);
+    background: var(--surface);
+    border-radius: 18px;
+    padding: 14px 16px;
+    font-size: 13px;
+    line-height: 1.55;
+    color: var(--dim);
+  }
+
+  .hint strong { color: var(--text); }
+
+  .hint button {
+    appearance: none;
+    border: 0;
+    background: transparent;
+    color: var(--accent);
+    font-size: 13px;
+    font-weight: 600;
+    padding: 6px 0 0;
+    cursor: pointer;
+  }
+
+  .hint[hidden] { display: none; }
+
+  .warn {
+    margin: 0 0 16px;
+    border: 1px solid rgba(217, 184, 115, 0.28);
+    background: rgba(217, 184, 115, 0.07);
+    border-radius: 18px;
+    padding: 14px 16px;
+    font-size: 12.5px;
+    line-height: 1.55;
+    color: var(--dim);
+  }
+
+  .warn a { color: var(--accent); font-weight: 600; text-decoration: none; }
+
+  footer {
+    margin-top: 18px;
+    padding-top: 16px;
+    border-top: 1px solid var(--line);
+    font-size: 11.5px;
+    color: var(--faint);
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+<div class="glow"></div>
+
+<div class="app">
+  <div class="topbar">
+    <span class="brand">Daily Wisdom</span>
+    <button class="icon-btn" id="openFavorites" type="button" aria-label="Favoriler">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l8.8 8.8 8.8-8.8a5.5 5.5 0 0 0 0-7.8z"/>
+      </svg>
+      <span class="badge-count" id="favCount" hidden>0</span>
+    </button>
+  </div>
+
+  <p class="date" id="todayDate"></p>
+
+  <main id="stage"></main>
+
+  <div class="warn" id="nativeNote">
+    ℹ️ Bu bir <strong>web uygulamasıdır</strong> (Ana Ekrana eklenebilir, çevrimdışı çalışır).
+    <strong>Kilit Ekranı widget'ı</strong> yalnızca iOS native sürümünde çalışır.
+    <a href="kurulum.html" id="installLink" hidden>Native widget sürümünü kur →</a>
+  </div>
+
+  <div class="hint" id="hint" hidden>
+    <strong>Ana Ekrana ekle:</strong> Safari'de alttaki <strong>Paylaş</strong> düğmesine
+    dokun → <strong>Ana Ekrana Ekle</strong>. Böylece tam ekran, çevrimdışı bir uygulama olur.
+    <br><button type="button" id="dismissHint">Anladım</button>
+  </div>
+
+  <footer>
+    Her gün tek bir söz · tamamen çevrimdışı · izin yok · takip yok
+  </footer>
+</div>
+
+<div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-label="Favoriler">
+  <div class="sheet-head">
+    <h2>Favoriler</h2>
+    <button class="icon-btn" id="closeFavorites" type="button" aria-label="Kapat">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true">
+        <path d="M6 6l12 12M18 6L6 18"/>
+      </svg>
+    </button>
+  </div>
+  <div class="sheet-body" id="favBody"></div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script id="quotes-data" type="application/json">[{"id": 1, "quote": "Some people die at 25 and aren’t buried until 75.", "author": "Benjamin Franklin"}, {"id": 2, "quote": "If your only goal is to become rich, you will never achieve it.", "author": "John D. Rockfeller Sr."}, {"id": 3, "quote": "When people talk, listen completely. Most people never listen.", "author": "Ernest Hemingway"}, {"id": 4, "quote": "Better to jump and make a mistake than sit there too frightened to make a move.", "author": "Richard Templar"}, {"id": 5, "quote": "If you are comfortable dancing in public without alcohol or drugs, you are at peace with who you are.", "author": "Ankur Warikoo"}, {"id": 6, "quote": "People do not decide their futures, they decide their habits and their habits decide their futures.", "author": "F.M. Alexander"}, {"id": 7, "quote": "Never put too much trust in friends, learn how to use enemies.", "author": "Robert Greene"}, {"id": 8, "quote": "Only staying active will make you want to live a hundred years.", "author": "Japanese Proverb"}, {"id": 9, "quote": "You are what you eat and read.", "author": "Maya Corrigan"}, {"id": 10, "quote": "Fall in love with taking care of yourself. Fall in love with becoming the best version of yourself but with patience, with compassion and respect to your own journey.", "author": "S. Mcnutt"}, {"id": 11, "quote": "The first step toward getting somewhere is to decide that you are not going to stay where you are.", "author": "J.P. Morgan"}, {"id": 12, "quote": "The single most powerful asset we all have is our mind. If it is trained well, it can create enormous wealth.", "author": "Robert T. Kiyosaki"}, {"id": 13, "quote": "Learn to choose your mental health over old attachments.", "author": "Hana Shebar"}, {"id": 14, "quote": "If it isn’t a clear yes, then it’s a clear no.", "author": "Greg McKeown"}, {"id": 15, "quote": "Procrastination will delay your dreams.", "author": "Vex King"}, {"id": 16, "quote": "Reading an hour a day is only 4% of your day. But that 4% will put you at the top of your field within 10 years. Find the time.", "author": "Patrick Bet-David"}, {"id": 17, "quote": "May God have mercy upon my enemies, because I won’t.", "author": "George S. Patton"}, {"id": 18, "quote": "Surround yourself only with people who are going to lift you higher.", "author": "Oprah Winfrey"}, {"id": 19, "quote": "If you cannot decide, the answer is no.", "author": "Naval Ravikant"}, {"id": 20, "quote": "You’ll never find a rainbow if you’re looking down.", "author": "Charlie Chaplin"}, {"id": 21, "quote": "Always say less than neccessary.", "author": "Robert Greene"}, {"id": 22, "quote": "It always seems impossible, until it is done.", "author": "Nelson Mandela"}, {"id": 23, "quote": "Remember, some of the best times of your life haven’t even happened yet.", "author": "Doug Carwright"}, {"id": 24, "quote": "A ship is safe in harbor, but that’s not what ships are built for.", "author": "John A. Shedd"}, {"id": 25, "quote": "When a person can’t find a deep sense of meaning, they distract themselves with pleasure.", "author": "Victor Frankl"}, {"id": 26, "quote": "A man who fears suffering is already suffering from what he fears.", "author": "Montaigne"}, {"id": 27, "quote": "We work jobs we hate, to buy things we don’t need, to impress people we don’t like.", "author": "Tyler Durden"}, {"id": 28, "quote": "Your time is limited so don’t waste it living someone else’s life.", "author": "Steve Jobs"}, {"id": 29, "quote": "A friend to all is a friend to none.", "author": "Aristotle"}, {"id": 30, "quote": "By changing nothing, nothing changes.", "author": "Tony Robbins"}, {"id": 31, "quote": "If you’re serious about changing your life, you’ll find a way. If not you’ll find an excuse.", "author": "Jen Sincero"}, {"id": 32, "quote": "Your life does not get better by chance, it gets better by change.", "author": "Jim Rohn"}, {"id": 33, "quote": "Change is hard at first, messy in the middle and gorgeous at the end.", "author": "Robin Sharma"}, {"id": 34, "quote": "You will face many defeats in life but never let yourself be defeated.", "author": "Maya Angelou"}, {"id": 35, "quote": "If you want a new idea, read an old book.", "author": "Ivan Pavlov"}, {"id": 36, "quote": "If you can change your mind, you can change your life.", "author": "William James"}, {"id": 37, "quote": "If people are not laughing at your goals, your goals are too small.", "author": "Azim Premji"}, {"id": 38, "quote": "If you are lonely when you’re alone you are in a bad company.", "author": "Jean Paul Sartre"}, {"id": 39, "quote": "We suffer more in imagination than in reality.", "author": "Seneca"}, {"id": 40, "quote": "When you have something to say, silence is a lie.", "author": "Jordan B. Peterson"}, {"id": 41, "quote": "The oldest, shortest words - ‘yes’ and ‘no’ - are those which requires the most thought.", "author": "Pythagoras"}, {"id": 42, "quote": "In life, the only two things you can control are your effort and your attitude. Everything else is not up to you.", "author": "S. Mcnutt"}, {"id": 43, "quote": "Do what you can, with what you have, where you are.", "author": "Theodore Roosevelt"}, {"id": 44, "quote": "The way to get started is to quit talking and begin doing.", "author": "Walt Disney"}, {"id": 45, "quote": "If you live each day as if it were your last, someday you’ll be right.", "author": "Steve Jobs"}, {"id": 46, "quote": "Don’t judge each day by the harvest you reap but by the seeds that you plant.", "author": "Robert Louis Stevenson"}, {"id": 47, "quote": "The only impossible journey is the one you never begin.", "author": "Tony Robbins"}, {"id": 48, "quote": "The best revenge is not to be like your enemy.", "author": "Marcus Aurelius"}, {"id": 49, "quote": "Everyone must choose one of two pains: The pain of discipline or the pain of regret.", "author": "Jim Rohn"}, {"id": 50, "quote": "Never spend money before you have it.", "author": "Thomas Jefferson"}, {"id": 51, "quote": "The poor and the middle class work for money. The rich have money work for them.", "author": "Robert T. Kiyosaki"}, {"id": 52, "quote": "He who has a why to live for can bear with almost any how.", "author": "Friedrich Nietzsche"}, {"id": 53, "quote": "I’d rather be optimistic and wrong than pessimistic and right.", "author": "Elon Musk"}, {"id": 54, "quote": "Everyone thinks of changing the world but no one thinks of changing himself.", "author": "Leo Tolstoy"}, {"id": 55, "quote": "One day you will wake up and there won’t be any more time to do things you’ve always wanted. Do it now.", "author": "Paulo Coelho"}, {"id": 56, "quote": "You should examine yourself daily. If you find faults, you should correct them. When you find none, you should try even harder.", "author": "Israel Zangwill"}, {"id": 57, "quote": "If you set your goals ridiculously high and it’s a failure, you will fail above everyone else’s success.", "author": "James Cameron"}, {"id": 58, "quote": "Travel and tell no one, live a true love story and tell no one, live happily and tell no one, people ruin beautiful things.", "author": "Kahlil Gibran"}, {"id": 59, "quote": "The nearer a man comes to a calm mind, the closer he is to strength.", "author": "Marcus Aurelius"}, {"id": 60, "quote": "The first principle is that you must not fool yourself and you are the easiest person to fool.", "author": "Richard Feynman"}, {"id": 61, "quote": "Discipline is choosing between what you want now and what you want most.", "author": "Abraham Lincoln"}, {"id": 62, "quote": "Step out of your comfort zone and face your fears. Growth takes place when you are challenged, not when you are comfortable.", "author": "Vex King"}, {"id": 63, "quote": "Be so good that they can’t ignore you.", "author": "Steve Martin"}, {"id": 64, "quote": "Who chases two rabbits catches neither.", "author": "Japanese Proverb"}, {"id": 65, "quote": "When you focus on you, you grow. When you focus on shit, shit grows.", "author": "Unknown"}, {"id": 66, "quote": "The journey of a thousand miles begins with a single step.", "author": "Lao Tzu"}, {"id": 67, "quote": "A little impatience will spoil great plans.", "author": "Chinese Proverb"}, {"id": 68, "quote": "You’ve made mistakes in the past, you will probably make more in future. And that’s ok.", "author": "Hanna Shebar"}, {"id": 69, "quote": "When something is important enough, you do it even if the odds are not in your favor.", "author": "Elon Musk"}, {"id": 70, "quote": "A good plan, violently executed now, is better than a perfect plan next week.", "author": "George S. Patton"}, {"id": 71, "quote": "Good habits formed at youth make all the difference.", "author": "Aristotle"}, {"id": 72, "quote": "If you want to conquer fear, don’t sit home and think about it. Go out and get busy.", "author": "Dale Carnegie"}, {"id": 73, "quote": "A problem is a chance for you to do your best.", "author": "Duke Ellington"}, {"id": 74, "quote": "A fit body, a calm mind, a house full of love. These things cannot be bought - they must be earned.", "author": "Naval Ravikant"}, {"id": 75, "quote": "No mortal man, is wise at all moments.", "author": "Pliny The Elder"}, {"id": 76, "quote": "If a man knows not to which port he sails, no wind is favorable.", "author": "Seneca"}, {"id": 77, "quote": "Life will not postpone our death. So, let us not postpone our life.", "author": "Unknown"}, {"id": 78, "quote": "Win through your actions, never through argument.", "author": "Robert Greene"}, {"id": 79, "quote": "Motivation is what gets you started. Habit is what keeps you going.", "author": "Jim Rohn"}, {"id": 80, "quote": "Learn from the mistakes of others... you can’t live long enough to make them all yourselves.", "author": "Chanakya"}, {"id": 81, "quote": "The greatest glory in living lies not in never falling, but in rising every time we fall.", "author": "Nelson Mandela"}, {"id": 82, "quote": "The only way to do great work is to love what you do.", "author": "Steve Jobs"}, {"id": 83, "quote": "He will never have true friends who is afraid of making enemies.", "author": "William Hazlitt"}, {"id": 84, "quote": "A man who is a master of patience is master of everything else.", "author": "George Savile"}, {"id": 85, "quote": "Inaction breeds doubt and fear. Action breeds confidence and courage.", "author": "Dale Carnegie"}, {"id": 86, "quote": "No man ever steps in the same river twice, for it’s not the same river and he’s not the same man.", "author": "Heraclitus"}, {"id": 87, "quote": "Don’t let yourself be controlled by three things: people, money, or past experience.", "author": "Unknown"}, {"id": 88, "quote": "Do what is right, not what is easy nor what is popular.", "author": "Roy T. Bennett"}, {"id": 89, "quote": "The goal is not to be better than the other man, but your previous self.", "author": "Dalai Lama"}, {"id": 90, "quote": "The future depends on what you do.", "author": "Mahatma Gandhi"}, {"id": 91, "quote": "We have two ears and one mouth, so we should listen more than we say.", "author": "Zeno"}, {"id": 92, "quote": "The bigger the ‘why’ the easier the ‘how’.", "author": "Jim Rohn"}, {"id": 93, "quote": "The only man who never makes mistakes is the man who never does anything.", "author": "Theodre Roosevelt"}, {"id": 94, "quote": "We’re what we repeatedly do. Excellence, therefore, is not an act, but a habit.", "author": "Aristotle"}, {"id": 95, "quote": "If you quit once it becomes a habit. Never quit!", "author": "Michael Jordan"}, {"id": 96, "quote": "When a person dies, he leaves his belongings at home, his family at the graveside and the only thing that accompanies him are his deeds.", "author": "Unknown"}, {"id": 97, "quote": "Waste no more time arguing about what a good man should be. Be one.", "author": "Marcus Aureilius"}, {"id": 98, "quote": "Live as if you were to die tommorrow. Learn as if you were to live forever.", "author": "Mahatma Gandhi"}, {"id": 99, "quote": "Twenty years from now you will be more disappointed by the things that you didn’t do than by the ones you did do.", "author": "H. Jackson Brown Jr."}, {"id": 100, "quote": "One moment can change a day, one day can change a life and one life can change the world.", "author": "Buddha"}]</script>
+<script>
+/* ---------------------------------------------------------------------------
+   Daily Wisdom — tek dosyalık web uygulaması
+   ---------------------------------------------------------------------------
+   * Günün sözü algoritması, native uygulamadaki DailyQuoteEngine.swift ile
+     BİREBİR aynıdır:  quoteIndex = daysPassed % quoteCount   (epoch: 1 Ocak 2025)
+     Bu yüzden telefonun tarayıcısında gördüğünüz söz ile native uygulamanın
+     gösterdiği söz aynı gündür aynıdır.
+   * Hiçbir ağ isteği yapmaz; tüm sözler ve tüm kod bu dosyanın içindedir.
+   * Favoriler yalnızca cihazda (localStorage) saklanır.
+--------------------------------------------------------------------------- */
+(function () {
+  'use strict';
+
+  /* --- veri ------------------------------------------------------------- */
+  var QUOTES = JSON.parse(document.getElementById('quotes-data').textContent);
+  var FAV_KEY = 'dailywisdom.favorites.v1';
+  var HINT_KEY = 'dailywisdom.hint.dismissed.v1';
+
+  /* --- deterministik günlük söz algoritması ----------------------------- */
+  var EPOCH = new Date(2025, 0, 1);          /* 1 Ocak 2025, yerel saat */
+  var MS_PER_DAY = 86400000;
+
+  function startOfDay(date) {
+    var d = new Date(date.getTime());
+    d.setHours(0, 0, 0, 0);
+    return d;
+  }
+
+  function daysPassed(date) {
+    /* Yaz saati geçişlerinde 23/25 saatlik günler olabildiği için yuvarlanır. */
+    return Math.round((startOfDay(date) - EPOCH) / MS_PER_DAY);
+  }
+
+  function quoteIndex(date) {
+    var count = QUOTES.length;
+    var remainder = daysPassed(date) % count;
+    return remainder >= 0 ? remainder : remainder + count;
+  }
+
+  function quoteFor(date) {
+    return QUOTES[quoteIndex(date)];
+  }
+
+  /* --- yardımcılar ------------------------------------------------------ */
+  function el(id) { return document.getElementById(id); }
+
+  function escapeHtml(value) {
+    return String(value)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
+
+  function displayAuthor(quote) {
+    var author = (quote.author || '').trim();
+    return author.length ? author : 'Unknown';
+  }
+
+  function shareText(quote) {
+    return '\u201C' + quote.quote + '\u201D\n- ' + displayAuthor(quote) +
+           '\n\nShared from Daily Wisdom';
+  }
+
+  var TR_MONTHS = ['Ocak', 'Şubat', 'Mart', 'Nisan', 'Mayıs', 'Haziran', 'Temmuz',
+                   'Ağustos', 'Eylül', 'Ekim', 'Kasım', 'Aralık'];
+  var TR_DAYS = ['Pazar', 'Pazartesi', 'Salı', 'Çarşamba', 'Perşembe', 'Cuma', 'Cumartesi'];
+
+  function formatDate(date) {
+    return TR_DAYS[date.getDay()] + ', ' + date.getDate() + ' ' +
+           TR_MONTHS[date.getMonth()] + ' ' + date.getFullYear();
+  }
+
+  function formatShortDate(iso) {
+    var d = new Date(iso);
+    return d.getDate() + ' ' + TR_MONTHS[d.getMonth()] + ' ' + d.getFullYear();
+  }
+
+  /* --- favoriler (yalnızca cihazda) ------------------------------------- */
+  function loadFavorites() {
+    try {
+      var raw = JSON.parse(localStorage.getItem(FAV_KEY) || '[]');
+      return Array.isArray(raw) ? raw : [];
+    } catch (error) {
+      return [];
+    }
+  }
+
+  function saveFavorites(list) {
+    try { localStorage.setItem(FAV_KEY, JSON.stringify(list)); } catch (error) { /* yoksay */ }
+  }
+
+  function isFavorite(id) { return loadFavorites().indexOf(id) !== -1; }
+
+  function toggleFavorite(quote) {
+    var list = loadFavorites();
+    var position = list.indexOf(quote.id);
+    var added;
+    if (position === -1) {
+      list.unshift(quote.id);
+      added = true;
+    } else {
+      list.splice(position, 1);
+      added = false;
+    }
+    saveFavorites(list);
+    return added;
+  }
+
+  /* --- bildirim --------------------------------------------------------- */
+  var toastTimer = null;
+
+  function toast(message) {
+    var node = el('toast');
+    node.textContent = message;
+    node.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function () { node.classList.remove('show'); }, 1900);
+  }
+
+  /* --- paylaşım --------------------------------------------------------- */
+  function share(quote) {
+    var text = shareText(quote);
+    if (navigator.share) {
+      navigator.share({ text: text, title: 'Daily Wisdom' }).catch(function () { /* iptal */ });
+      return;
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(function () {
+        toast('Panoya kopyalandı');
+      }).catch(function () { toast('Paylaşım desteklenmiyor'); });
+      return;
+    }
+    toast('Paylaşım desteklenmiyor');
+  }
+
+  /* --- ikonlar ---------------------------------------------------------- */
+  var ICON = {
+    heart: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l8.8 8.8 8.8-8.8a5.5 5.5 0 0 0 0-7.8z"/></svg>',
+    heartFilled: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-8.5-5.4-8.5-11A5.5 5.5 0 0 1 12 6.2 5.5 5.5 0 0 1 20.5 10c0 5.6-8.5 11-8.5 11z"/></svg>',
+    share: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 16V4m0 0L8 8m4-4 4 4"/><path d="M5 14v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-5"/></svg>',
+    trash: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M9 7V5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2M6 7l1 12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1l1-12"/></svg>'
+  };
+
+
+  /* --- ana ekran -------------------------------------------------------- */
+  var currentQuote = null;
+  var stage = el('stage');
+
+  function renderMain() {
+    var today = new Date();
+    var quote = quoteFor(today);
+    currentQuote = quote;
+    var favorite = isFavorite(quote.id);
+    var position = quoteIndex(today) + 1;
+
+    el('todayDate').textContent = formatDate(today);
+
+    stage.innerHTML =
+      '<div class="enter">' +
+        '<div class="mark" aria-hidden="true">\u201C</div>' +
+        '<blockquote id="quoteText">' + escapeHtml(quote.quote) + '</blockquote>' +
+        '<div class="author">' + escapeHtml(displayAuthor(quote)) + '</div>' +
+      '</div>';
+
+    var actions = document.createElement('div');
+    actions.className = 'actions';
+    actions.style.marginTop = '30px';
+
+    var favButton = document.createElement('button');
+    favButton.type = 'button';
+    favButton.className = 'pill' + (favorite ? ' on' : '');
+    favButton.id = 'favButton';
+    favButton.setAttribute('aria-pressed', favorite ? 'true' : 'false');
+    favButton.innerHTML = (favorite ? ICON.heartFilled : ICON.heart) +
+      '<span>' + (favorite ? 'Favorilerde' : 'Favorilere Ekle') + '</span>';
+    favButton.addEventListener('click', function () {
+      var added = toggleFavorite(currentQuote);
+      favButton.className = 'pill' + (added ? ' on' : '');
+      favButton.setAttribute('aria-pressed', added ? 'true' : 'false');
+      favButton.innerHTML = (added ? ICON.heartFilled : ICON.heart) +
+        '<span>' + (added ? 'Favorilerde' : 'Favorilere Ekle') + '</span>';
+      updateFavCount();
+      renderFavorites();
+      toast(added ? 'Favorilere eklendi' : 'Favorilerden çıkarıldı');
+    });
+
+    var shareButton = document.createElement('button');
+    shareButton.type = 'button';
+    shareButton.className = 'pill';
+    shareButton.innerHTML = ICON.share + '<span>Paylaş</span>';
+    shareButton.addEventListener('click', function () { share(currentQuote); });
+
+    actions.appendChild(favButton);
+    actions.appendChild(shareButton);
+    stage.appendChild(actions);
+
+    var meta = document.createElement('div');
+    meta.className = 'meta';
+    meta.innerHTML = '<span>Söz ' + position + ' / ' + QUOTES.length + '</span>' +
+                     '<span id="countdown"></span>';
+    stage.appendChild(meta);
+
+    tickCountdown();
+    updateFavCount();
+  }
+
+  /* --- gece yarısı geri sayımı ------------------------------------------ */
+  function tickCountdown() {
+    var node = el('countdown');
+    if (!node) { return; }
+    var now = new Date();
+    var midnight = new Date(now.getTime());
+    midnight.setHours(24, 0, 0, 0);
+    var total = Math.max(0, Math.floor((midnight - now) / 1000));
+    var hours = Math.floor(total / 3600);
+    var minutes = Math.floor((total % 3600) / 60);
+    var seconds = total % 60;
+    var pad = function (value) { return value < 10 ? '0' + value : String(value); };
+    node.textContent = 'Yeni söz: ' + pad(hours) + ':' + pad(minutes) + ':' + pad(seconds);
+  }
+
+  /* --- favoriler ekranı ------------------------------------------------- */
+  var sheet = el('sheet');
+
+  function updateFavCount() {
+    var count = loadFavorites().length;
+    var badge = el('favCount');
+    badge.textContent = String(count);
+    badge.hidden = count === 0;
+  }
+
+  function renderFavorites() {
+    var body = el('favBody');
+    var ids = loadFavorites();
+    var items = ids
+      .map(function (id) {
+        return QUOTES.filter(function (item) { return item.id === id; })[0] || null;
+      })
+      .filter(function (item) { return item !== null; });
+
+    if (!items.length) {
+      body.innerHTML = '<div class="empty">Henüz favori yok.<br>Günün sözünün altındaki ' +
+                       '❤️ düğmesine dokunun.</div>';
+      return;
+    }
+
+    body.innerHTML = '';
+    items.forEach(function (quote) {
+      var row = document.createElement('div');
+      row.className = 'row';
+      row.innerHTML =
+        '<p>' + escapeHtml(quote.quote) + '</p>' +
+        '<div class="row-foot">' +
+          '<span class="row-author">- ' + escapeHtml(displayAuthor(quote)) + '</span>' +
+          '<span class="row-actions">' +
+            '<button type="button" data-action="share" aria-label="Paylaş">' + ICON.share + '</button>' +
+            '<button type="button" data-action="remove" aria-label="Kaldır">' + ICON.trash + '</button>' +
+          '</span>' +
+        '</div>';
+
+      row.querySelector('[data-action="share"]').addEventListener('click', function () {
+        share(quote);
+      });
+      row.querySelector('[data-action="remove"]').addEventListener('click', function () {
+        var list = loadFavorites().filter(function (id) { return id !== quote.id; });
+        saveFavorites(list);
+        renderFavorites();
+        updateFavCount();
+        renderMain();
+        toast('Favorilerden çıkarıldı');
+      });
+
+      body.appendChild(row);
+    });
+  }
+
+  function openSheet() {
+    renderFavorites();
+    sheet.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeSheet() {
+    sheet.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  /* --- ipucu ve kurulum bağlantısı -------------------------------------- */
+  function setupHint() {
+    var hint = el('hint');
+    var standalone = window.navigator.standalone === true ||
+                     window.matchMedia('(display-mode: standalone)').matches;
+    if (!standalone && localStorage.getItem(HINT_KEY) !== '1') {
+      hint.hidden = false;
+    }
+    el('dismissHint').addEventListener('click', function () {
+      try { localStorage.setItem(HINT_KEY, '1'); } catch (error) { /* yoksay */ }
+      hint.hidden = true;
+    });
+  }
+
+  function setupInstallLink() {
+    var link = el('installLink');
+    var href = link.getAttribute('href') || '';
+    if (!href || href === '#' || href.indexOf('__INSTALL') === 0) {
+      link.hidden = true;
+      link.removeAttribute('href');
+    } else {
+      link.hidden = false;
+    }
+  }
+
+  /* --- başlat ----------------------------------------------------------- */
+  function start() {
+    if (!QUOTES.length) {
+      stage.innerHTML = '<div class="empty">Söz veritabanı yüklenemedi.</div>';
+      return;
+    }
+
+    renderMain();
+    renderFavorites();
+    setupHint();
+    setupInstallLink();
+
+    el('openFavorites').addEventListener('click', openSheet);
+    el('closeFavorites').addEventListener('click', closeSheet);
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape') { closeSheet(); }
+    });
+
+    setInterval(tickCountdown, 1000);
+
+    /* Gece yarısı: yeni günün sözüne geç (native uygulamadaki
+       NSCalendarDayChanged davranışının web karşılığı). */
+    var lastDay = startOfDay(new Date()).getTime();
+    setInterval(function () {
+      var today = startOfDay(new Date()).getTime();
+      if (today !== lastDay) {
+        lastDay = today;
+        renderMain();
+      }
+    }, 20000);
+
+    /* Uygulama öne geldiğinde tarih değişmişse yenile. */
+    document.addEventListener('visibilitychange', function () {
+      if (!document.hidden) {
+        var today = startOfDay(new Date()).getTime();
+        if (today !== lastDay) {
+          lastDay = today;
+          renderMain();
+        }
+        tickCountdown();
+      }
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', start);
+  } else {
+    start();
+  }
+})();
+
+
+</script>
+</body>
+</html>
